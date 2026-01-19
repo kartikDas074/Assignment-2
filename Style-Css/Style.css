@@ -43,6 +43,9 @@
 .col{
     color:#FFFFFF;
 }
+.gap{
+    margin: 16px 0px;
+}
 /* Navbar section Css */
 .headersec{
    background-color: #1A0B2E;
@@ -313,6 +316,114 @@
    gap:1.2rem;
     padding:0rem 1.2rem;
 }
+
+/* Feature and Host section */
+
+.Main_feature{
+    background-color: #1A0B2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.feature{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin: 7rem 0rem;
+     gap:40px;
+}
+.feature h1{
+    font-size:3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    width:80%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.episodes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,400px);
+    gap:30px;
+}
+.episode{
+   grid-column: span 1;
+   grid-row: span 1;
+   background-color: #250D44;
+   border-radius: 30px;
+   overflow: hidden;
+}
+.Fea-description{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: left;
+   padding: 20px;
+}
+.episode iframe{
+    width: 100%;
+}
+.duration{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    gap:16px;
+}
+.duration p{
+    color:#00FF88;
+}
+.Host{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin: 7rem 0rem;
+     gap:40px;
+}
+.Host h1{
+    font-size:3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    width:80%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.Host_info{
+    background-color:#351165;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    padding: 2rem 3rem;
+    border-radius: 30px;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.detail h2{
+    font-size: 2rem;
+    color:#FFFFFF;
+}
+.linking{
+    display: flex;
+    gap:16px;
+}
+
+.linking a{
+    border:1px solid #533C72;
+    padding:10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Lets Make it Responsive */
 @media screen and (max-width:576px){
     .nab ul{
@@ -370,6 +481,44 @@
     color:#FFFFFF;
     width:90%;
 }
+
+.feature{
+    width:90%;
+     margin: 2rem 0rem;
+     gap:30px;
+}
+.feature h1{
+    font-size:2rem;
+    font-weight: 600;
+    width:90%;
+}
+.episodes{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(3,400px);
+}
+.episode{
+   grid-column: span 1;
+   grid-row: span 1;
+}
+.Host{
+    width:90%;
+     margin: 2rem 0rem;
+     gap:30px;
+}
+.Host h1{
+    font-size:3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    width:80%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.Host_info{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 }
 @media screen and (min-width:576px){
    .menu{
