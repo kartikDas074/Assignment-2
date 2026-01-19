@@ -31,6 +31,18 @@
     transform:translateY(-7px) translateX(-3px);
     box-shadow: 0px 4px 16px rgb(16, 0, 0);
 }
+
+.font-h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.font-p1{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.col{
+    color:#FFFFFF;
+}
 /* Navbar section Css */
 .headersec{
    background-color: #1A0B2E;
@@ -210,6 +222,97 @@
     color:#FFFFFF;
     text-align: center;
 }
+
+/* why choose section */
+.Choose{
+    background-color: #230E3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:7rem 0rem;
+}
+.Choose h1{
+    font-size:3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    width:80%;
+    text-align: center;
+}
+.Choose-card-holder{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,14rem);
+    gap:30px;
+    margin:3rem 0rem;
+}
+.choose-card-1{
+    grid-column:span 1;
+    grid-row: span 2;
+    background-color: #351165;
+    border-radius: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   gap:1.2rem;
+    padding:0rem 1.2rem;
+}
+
+.choose-card-2{
+    grid-column:span 2;
+    grid-row: span 1;
+    background-color: #351165;
+    border-radius: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   gap:1.2rem;
+    padding:0rem 1.2rem;
+}
+.choose-card-3{
+    grid-column:span 2;
+    grid-row: span 1;
+    background-color: #351165;
+    border-radius: 30px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   gap:1.2rem;
+    padding:0rem 1.2rem;
+}
+.choose-card-4{
+    grid-column:span 2;
+    grid-row: span 1;
+    background-color: #351165;
+    border-radius: 30px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   gap:1.2rem;
+    padding:0rem 1.2rem;
+}
+.choose-card-5{
+    grid-column:span 1;
+    grid-row: span 1;
+    background-color: #351165;
+    border-radius: 30px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   gap:1.2rem;
+    padding:0rem 1.2rem;
+}
 /* Lets Make it Responsive */
 @media screen and (max-width:576px){
     .nab ul{
@@ -233,6 +336,39 @@
     width: 90%;
     grid-template-columns: repeat(2,1fr);
     margin-bottom: 5rem;
+}
+
+.Choose-card-holder{
+    width: 90%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(7,14rem);
+    gap:20px;
+    margin:2rem 0rem;
+    margin:1.2rem 0rem;
+}
+.choose-card-1,.choose-card-4{
+    grid-row:span 2;
+    grid-column: span 1;
+    padding:10px;
+}
+.choose-card-2,.choose-card-3,.choose-card-5{
+    grid-row:span 1;
+    grid-column: span 1;
+    padding:10px;
+}
+.font-h1{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.font-p1{
+    font-size: .8rem;
+    font-weight: 400;
+}
+.Choose h1{
+    font-size:2rem;
+    font-weight: 600;
+    color:#FFFFFF;
+    width:90%;
 }
 }
 @media screen and (min-width:576px){
