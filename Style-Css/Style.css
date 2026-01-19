@@ -1,0 +1,242 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+/* Sharded style */
+.Linear{
+    background: linear-gradient(to bottom, 
+                #F7E93F 0%, 
+                #FB09B4 51%, 
+                #9100F8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;/
+}
+.btn{
+    background: linear-gradient(45deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%);
+    padding: 12px 16px;
+    border:none;
+    border-radius: 30px;
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+   cursor: pointer;
+   transition: all .5s; 
+}
+.btn:hover{
+    transform:translateY(-7px) translateX(-3px);
+    box-shadow: 0px 4px 16px rgb(16, 0, 0);
+}
+/* Navbar section Css */
+.headersec{
+   background-color: #1A0B2E;
+}
+.nab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:16px 0px;
+    width: 80%;
+    margin:0px auto;
+    
+}
+.nab h1{
+    color:#FFFFFF;
+}
+.nab ul{
+    list-style-type: none;
+    display: flex;
+    gap:32px;
+    align-items: center;
+}
+.nab ul li a{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+/* .nab button p{
+  text-wrap: none;
+} */
+
+
+/* Banner section */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.box{
+    padding:101px 0px;
+}
+.img-overlap{
+
+}
+#circle{
+  
+    height: 300px;
+    width: 300px;
+    position: relative;
+     right:-90px;
+     z-index: 0;
+}
+#micro{
+    
+    position: relative;
+    left:-130px;
+    top:-70px;
+   z-index: 1;
+}
+#badge{
+    aspect-ratio: 16/9;
+   position: relative;
+    left:-120px;
+    top:-270px;
+   z-index: 1;
+}
+.img-overlap button{
+    background-color: #00FF88;
+    color:white;
+    padding:5px 15px;
+    border:none;
+    border-radius:10px;
+}
+.subscribe{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ 
+}
+.subscribe h1{
+    text-align: center;
+    color:white;
+    font-size: 3.8rem;
+ font-weight: 800;
+}
+.subscribe p{
+    text-align: center;
+    color:white;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.btn-hold{
+    display: flex;
+    gap:30px;
+}
+#subs{
+    display: flex;
+     justify-content: center;
+   align-items: center;
+   gap:10px;
+    background-color: transparent;
+    border:1px solid #00FF88;
+    color:#00FF88;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+   cursor: pointer;
+   transition: all 0.5sec ease;
+}
+
+#subs:hover{
+    transform:translateY(-7px) translateX(-3px);
+    box-shadow: 0px 4px 16px rgb(16, 0, 0);
+}
+
+/* About Podcast section */
+
+.about_podcast{
+    background-color: #1A0B2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.podcast_intro{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.podcast_intro h1{
+    color:#FFFFFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-top:4rem;
+    margin-bottom: 1rem;
+}
+.podcast_intro p{
+    color:#FFFFFF;
+    text-align: center;
+    font-size:.8rem;
+    font-weight: 400;
+}
+.line{
+    width:80%;
+    border:1px solid #FFFFFF;
+    margin:5rem 0px;
+}
+.podcast_rating{
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+.RATING h1{
+    font-size:3rem;
+    font-weight: 900;
+    color:#00FF88;
+    text-align: center;
+    margin-bottom: .8rem;
+}
+.RATING p{
+    font-size:.8rem;
+    font-weight: 400;
+    color:#FFFFFF;
+    text-align: center;
+}
+/* Lets Make it Responsive */
+@media screen and (max-width:576px){
+    .nab ul{
+       display: none;
+    }
+    .nab button{
+        display: none;
+    }
+    .nab{
+      width:90%;
+    }
+    
+
+.podcast_intro{
+    width: 90%;
+}
+.line{
+    width:90%;
+}
+.podcast_rating{
+    width: 90%;
+    grid-template-columns: repeat(2,1fr);
+    margin-bottom: 5rem;
+}
+}
+@media screen and (min-width:576px){
+   .menu{
+    display:none;
+   }
+}
