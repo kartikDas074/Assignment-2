@@ -501,24 +501,26 @@
    grid-row: span 1;
 }
 .Host{
-    width:90%;
+    width:80%;
      margin: 2rem 0rem;
      gap:30px;
 }
+
 .Host h1{
-    font-size:3rem;
+    font-size:2rem;
     font-weight: 700;
-    color:#FFFFFF;
-    width:80%;
-    text-align: center;
-    margin-bottom: 2rem;
+    width:90%;
 }
 .Host_info{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding:2rem 1rem;
 }
-
+.host_pic{
+    width:200px;
+    height: 200px;
+}
 }
 @media screen and (min-width:576px){
    .menu{
