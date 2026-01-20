@@ -81,90 +81,88 @@
 
 /* Banner section */
 .banner{
+    background-image: url('../assets/hero-bg.png');
+    background-size: 100% 100%;
+   
+     display: flex;
+    justify-content: center;;
+    align-items: center;
+    flex-direction: column;
+}
+.banner_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+    margin:20px 0px;
+}
+
+
+.Logo {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("../assets/hero-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    width:26%;
 }
-.box{
-    padding:101px 0px;
-}
-.img-overlap{
 
+
+.Micro {
+    position: absolute;
+} 
+.badge{
+   position: absolute;
+  transform: translate(250%,-300%);
 }
-#circle{
-  
-    height: 300px;
-    width: 300px;
-    position: relative;
-     right:-90px;
-     z-index: 0;
+.badge button{
+   padding:10px 16px;
+   background-color:#00FF88;
+   border-radius: 15px;
+   border:none;
+   box-shadow: 0 0 15px 5px rgba(97, 189, 146, 0.415);
 }
-#micro{
-    
-    position: relative;
-    left:-130px;
-    top:-70px;
-   z-index: 1;
-}
-#badge{
-    aspect-ratio: 16/9;
-   position: relative;
-    left:-120px;
-    top:-270px;
-   z-index: 1;
-}
-.img-overlap button{
-    background-color: #00FF88;
-    color:white;
-    padding:5px 15px;
-    border:none;
-    border-radius:10px;
-}
-.subscribe{
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- 
-}
-.subscribe h1{
-    text-align: center;
-    color:white;
-    font-size: 3.8rem;
- font-weight: 800;
-}
-.subscribe p{
-    text-align: center;
-    color:white;
-    margin-top:20px;
-    margin-bottom: 20px;
-}
-.btn-hold{
+.info{
     display: flex;
-    gap:30px;
+    flex-direction: column;
+    justify-content: center;;
+    align-items: center;
+   margin:20px 0px;
 }
-#subs{
-    display: flex;
-     justify-content: center;
-   align-items: center;
-   gap:10px;
-    background-color: transparent;
-    border:1px solid #00FF88;
-    color:#00FF88;
+.info h1{
+     font-size:3rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.info p{
+    font-size: .8rem;
+    font-weight: 400;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+}
+.btn-2{
+    background: transparent;
     padding: 12px 16px;
+    border:1px solid #00FF88;
     border-radius: 30px;
+    color:#00FF88;
     font-weight: 700;
     font-size: 1.2rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
    cursor: pointer;
-   transition: all 0.5sec ease;
+   transition: all .5s; 
 }
-
-#subs:hover{
+.btn-2:hover{
     transform:translateY(-7px) translateX(-3px);
     box-shadow: 0px 4px 16px rgb(16, 0, 0);
+}
+.btn_holder{
+    display: flex;
+    gap:10px;
 }
 
 /* About Podcast section */
@@ -583,6 +581,70 @@
     align-items: center;
     gap:5px;
   }
+  /* banner section */
+
+
+.circle img{
+    width:50vw;
+}
+
+
+.Micro img{
+    height: 20vh;
+}
+.badge{
+   position: absolute;
+  transform: translate(180%,-180%);
+}
+.badge button{
+   padding:5px 10px;
+   background-color:#00FF88;
+   border-radius: 15px;
+   border:none;
+   box-shadow: 0 0 5px 5px rgba(97, 189, 146, 0.415);
+}
+.info{
+width:90%
+
+}
+.info h1{
+     font-size:2rem;
+    font-weight: 700;
+    color:#FFFFFF;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.info p{
+    font-size: .8rem;
+    font-weight: 400;
+    color:#FFFFFF;
+    margin-bottom: 10px;
+}
+.btn-2{
+    background: transparent;
+    padding: 5px 10px;
+    border:1px solid #00FF88;
+    border-radius: 30px;
+    color:#00FF88;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:10px;
+   cursor: pointer;
+   transition: all .5s; 
+}
+.btn-2:hover{
+    transform:translateY(-7px) translateX(-3px);
+    box-shadow: 0px 4px 16px rgb(16, 0, 0);
+}
+.btn_holder{
+    display: flex;
+    gap:10px;
+}
+
+  
 }
 @media screen and (min-width:576px){
    .menu{
